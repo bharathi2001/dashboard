@@ -1,0 +1,219 @@
+.dashboard{
+    margin-left: 130px;
+    padding-top: 90px;
+    overflow-x: hidden;
+}
+.dashboard-cards{
+    width: 22%;
+    color: #d3d3d3;
+    /* height: 190px !important; */
+}
+.cards-images{
+    border-radius: 10px;
+    display: block;
+}
+.card-percent{
+    display: inline;
+}
+/* .circle-div{
+    align-items: center;
+} */
+text{
+    color: white;
+}
+text{
+    color: white !important;
+}
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#4d5bf9 0% 70%, #d3d3d3 70% 100%);
+}
+.circle::before {
+    content: '70%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #000;
+}
+/* .circle-div{
+    height: 190px !important;
+} */
+/* .circle-div .chart{
+    height: 190px !important;
+} */
+ /* .activity{
+    align-content: center;
+ } */
+.circle-chart{
+height: 120px !important;
+}
+.circle-caption{
+    font-size: 10px;
+}
+.col{
+    border-radius: 5px;
+}
+.activity-head{
+    display: inline;
+}
+.select-activity{
+    float: right;
+    border-radius: 50px;
+    background-color: #201c1c92 !important;
+    color: rgb(183, 173, 173);
+    padding: 5px;
+}
+.activity-cards-img{
+    border-radius: 50px;
+    display: inline;
+}
+.gt-lt{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(128, 122, 122);
+    border-radius: 50px;
+    /* align-items: center; */
+    text-align: center;
+}
+.delivered{
+    background-color: rgb(79, 115, 79);
+    color: rgb(135, 159, 135);
+    border-radius: 50px;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+}
+.cancelled, .pending{
+    background-color: rgb(188, 70, 70);
+    color: rgb(172, 122, 122);
+    width: 90px;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+}
+.table-imges{
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.feedback{
+    font-size: 13px;
+}
+
+@media (max-width: 679px){
+    .dashboard{
+        margin-top: 20px !important;
+        overflow-x: hidden;
+        margin: auto !important;
+        align-items: center;
+    }
+    .dashboard-head{
+        margin-left: 20px;
+    }
+    .dashboard-body{
+        margin-top: 10px !important;
+    }
+    .dashboard-cards, .profit-div{
+        width: 82% !important;
+        margin-left: 26px !important;
+    }
+    .activity{
+        width: 82% !important;
+        margin-left: 16px !important;
+        padding: 20px !important;
+        font-size: 15px;
+    }
+    .customer-table{
+        margin: auto;
+        width: 82% !important;
+        margin-bottom: 10px;
+    }
+    .card-div{
+        flex-direction: column;
+        margin-top: 0px !important;
+    }
+    .profit-div{
+        margin: 20px !important;
+        margin-right: 50px !important;
+        margin-left: 40px !important;
+    }
+    .circle-div{
+        margin-left: 0px !important;
+    }
+    .profit-div{
+        padding-bottom: 10px !important;
+    }
+    .circle-chart{
+        height: 15vh !important;
+    }
+    .circle-caption{
+        margin-left: 23px !important;
+        margin-bottom: 10px;
+    }
+    .activity-div{
+        margin-left: 14px !important;
+    }
+    table{
+        font-size: 13px;
+    }
+    .table-imges{
+        height: 30px;
+        width: 30px;
+    }
+    .delivered, .cancelled, .pending{
+        width: 60px;
+    }
+}
+@media (max-width: 800px){
+    .dashboard{
+        margin-top: 20px !important;
+        overflow-x: hidden;
+        margin: auto !important;
+        margin-left: 20px !important;
+        align-items: center;
+    }
+}
+@media (min-width: 801px){
+    .customer-table{
+        width: 65%;
+    }
+    /* .table-reviews{
+        height: 40vh;
+        overflow-y: auto;
+    } */
+}
+@media (min-width: 680px) and (max-width: 1024px){
+    .common-div{
+        width: 80%;
+        margin: 20px 50px !important;
+    }
+    .circle-div{
+        margin-left: 0px !important;
+    }
+    .activity{
+        padding: 10px !important;
+        /* margin-left: 3px !important; */
+    }
+}
+@media (min-width: 900px){
+    .activity{
+        align-content: center;
+    }
+}
+@media (max-width: 398px){
+    table{
+        width: 80% !important;
+        font-size: 10px !important;
+    }
+    /* .table-reviews{
+        height: 40vh;
+        overflow-y: auto;
+    } */
+}
